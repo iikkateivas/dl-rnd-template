@@ -1,0 +1,32 @@
+{
+    "test_name": "test",
+    "data": {
+        "datasets": "a",
+        "pre_norm": "False"
+    },
+    "training": {
+        "optimizer": {
+            "type": "sgd",
+            "lr": 0.01,
+            "decay": 1e-6,
+            "momentum": 0.95
+        },
+        "checkpoint": {
+            "save_weights_only": "True",
+            "save_best_only": "False",
+            "period": 1
+        },
+        "pre_trained": "False",
+        "weight_path": "",
+        "loss": "mean_squared_error",
+        "training_metrics": [
+            "mae"
+        ],
+        "epochs": 200,
+        "batch_size": 1,
+        "val_data": "True"
+    },
+    "validation": {
+        "results_root": "results"
+    }
+}
